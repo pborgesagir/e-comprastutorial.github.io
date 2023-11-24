@@ -59,11 +59,26 @@
 
 
   @media (max-width: 767px) {
-    /* Adjust for smaller screens */
-    .iframe-container iframe {
-      width: 100%; /* Full width on smaller screens */
+      body {
+        margin: 10px; /* Adjust margin for smaller screens */
+      }
+      .blue-bar {
+        height: 20px; /* Reduce height of the blue bar */
+      }
+      .content {
+        padding: 10px; /* Adjust padding for content */
+      }
+      .content p,
+      .content iframe,
+      .content img {
+        font-size: 16px; /* Decrease font size for paragraphs and content */
+      }
+      .iframe-container iframe {
+        width: 100%; /* Full width for iframes on smaller screens */
+        margin-bottom: 10px; /* Reduce space between iframes */
+      }
+      /* Add more adjustments as needed for smaller screens */
     }
-  }
     
   </style>
   
